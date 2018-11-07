@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="WINK WINK"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="Register"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="141dp"
+        android:text="Username :"
+        android:textSize="20dp"  />
+
+    <EditText
+        android:id="@+id/reuser"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user"
+        android:layout_toEndOf="@+id/user"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/user"
+        android:layout_marginTop="194dp"
+        android:text="Password :"
+        android:textSize="20dp"  />
+
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reuser"
+        android:layout_toEndOf="@+id/user"
+        android:textSize="20dp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/nameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/user"
+        android:layout_marginBottom="235dp"
+        android:text="Name :"
+        android:textSize="20dp"  />
+
+    <EditText
+        android:id="@+id/rename"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameuser"
+        android:layout_alignStart="@+id/reuser"
+        android:textSize="20dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/user"
+        android:layout_marginBottom="176dp"
+        android:text="Email :"
+        android:textSize="20dp"  />
+
+    <EditText
+        android:id="@+id/reemail"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignStart="@+id/reuser"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/regisbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:background="#26a599"
+        android:text="sumbit" />
+
+</RelativeLayout>
+
